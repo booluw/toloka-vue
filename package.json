@@ -13,6 +13,9 @@
   "dependencies": {
     "@oruga-ui/oruga-next": "^0.8.8",
     "@oruga-ui/theme-oruga": "^0.2.2",
+    "@splidejs/vue-splide": "^0.6.12",
+    "flowbite": "^2.3.0",
+    "flowbite-vue": "^0.1.4",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
