@@ -1,6 +1,5 @@
 <script setup>
 // import BRAND_NAME from "@/utils/constants.js"
-import { FwbButton } from 'flowbite-vue'
 import Brands from "@/components/Brands.vue"
 import CarouselOne from "@/components/CarouselOne.vue"
 const logo = "Afro Hub"
