@@ -1,5 +1,9 @@
 <script setup>
 // import BRAND_NAME from "@/utils/constants.js"
+import Brands from "@/components/Brands.vue"
+import CarouselOne from "@/components/CarouselOne.vue"
+const logo = "Afro Hub"
+const landingTxt = "Get paid to do short tasks online"
 import Brands from '@/components/Brands.vue'
 import CarouselOne from '@/components/CarouselOne.vue'
 const logo = 'Afro Hub'
