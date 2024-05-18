@@ -12,11 +12,12 @@
   },
   "dependencies": {
     "@oruga-ui/oruga-next": "^0.8.8",
-    "@oruga-ui/theme-oruga": "^0.2.2",
     "@splidejs/vue-splide": "^0.6.12",
-    "flowbite": "^2.3.0",
-    "flowbite-vue": "^0.1.4",
+    "@types/node": "^20.12.12",
+    "@types/vue": "^2.0.0",
+    "element-plus": "^2.7.3",
     "pinia": "^2.1.7",
+    "sass": "^1.77.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
@@ -30,6 +31,8 @@
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.3",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.0",
     "vite": "^5.2.8"
   }
 }
