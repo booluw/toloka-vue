@@ -9,6 +9,9 @@ export default {
       colors: {
         primary: '#356B4C',
         danger: '#FF0000'
+      },
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"]
       }
     },
   },
