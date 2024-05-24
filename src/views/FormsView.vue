@@ -3,7 +3,12 @@
 <template>
     <main class="">
         <section>
-           
+           <h3>Sign Up As a Client</h3>
+           <el-form>
+            <el-form-item label="Username">
+
+            </el-form-item>
+           </el-form>
         </section>
     </main>
 </template>
