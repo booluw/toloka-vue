@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         primary: '#356B4C',
-        danger: '#FF0000'
+        danger: '#FF0000',
+        black: '#3a3a3a'
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"]
