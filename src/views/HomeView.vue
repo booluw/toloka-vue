@@ -1,13 +1,11 @@
 <script setup>
-// import BRAND_NAME from "@/utils/constants.js"
+// import BRAND_NAME from "@/utils/constants.js",
 import Brands from "@/components/Brands.vue"
-import CarouselOne from "@/components/CarouselOne.vue"
+import CardsHIW from "@/components/CardsHIW.vue"
+import Othertasks from "@/components/Othertasks.vue"
+import Freelancer from "@/components/Freelancer.vue"
 const logo = "Afro Hub"
-const landingTxt = "Get paid to do short tasks online"
-import Brands from '@/components/Brands.vue'
-import CarouselOne from '@/components/CarouselOne.vue'
-const logo = 'Afro Hub'
-const landingTxt = 'Get paid to do short tasks online'
+const landingTxt = "Get Paid To Do Short Tasks Online"
 </script>
 
 <template>
@@ -28,41 +26,48 @@ const landingTxt = 'Get paid to do short tasks online'
           <div class="box3 w-10 pt-1 mb-1 bg-danger"></div>
         </label>
         <ul
-          class="nav-items md:flex flex-col hidden md:flex-row md:gap-[30px] ml-10 justify-center items-center"
+          class="nav-items text-xl md:flex md:gap-5 lg:gap-9 flex-col hidden md:flex-row justify-between items-center"
         >
-          <li><a class="hover:text-gray-300" href="">Home</a></li>
-          <li><a class="hover:text-gray-300" href="">Blog</a></li>
-          <li><a class="hover:text-gray-300" href="">FAQ</a></li>
-          <li><a class="hover:text-gray-300" href="">Help</a></li>
+          <li><a class="border-e-white border-b-2 py-3" href="">Home</a></li>
+          <li><a class="hover:border-e-white hover:border-b-2 py-3" href="">Blog</a></li>
+          <li><a class="hover:border-e-white hover:border-b-2 py-3" href="">FAQ</a></li>
+          <li><a class="hover:border-e-white hover:border-b-2 py-3" href="">Help</a></li>
         </ul>
 
-        <div class="btn md:flex nav-items hidden md:gap-[10px] justify-center items-center">
+        <div class="btn text-xl md:ml-10 md:flex nav-items hidden md:justify-between md:items-center">
           <button class="hover:bg-black w-20 p-2 rounded-sm duration-700">Login</button>
-          <button class="hover:bg-black w-20 p-2 rounded-sm duration-700">Sign up</button>
+          <a href>
+          <button class="hover:bg-black w-24 p-2 rounded-sm duration-700">Sign up</button>
+          </a>
         </div>
       </div>
 
-      <div class="text">
+      <div class="text pt-24 md:pt-10 ml-20">
         <h2
-          class="text-white lg:text-[72px] md:text-[50px] text-[45px] md:w-[50%] w-[85%] leading-none lg:w-[42%] ml-14 lg:ml-14 mt-20 lg:mt-28 md:mt-16"
+          class="text-white lg:text-[72px] md:text-[50px] text-[50px] md:w-[65%] leading-tight lg:w-[42%] mt-22 lg:mt-28 md:mt-16"
         >
           {{ landingTxt }}
         </h2>
-        <p
-          class="lg:w-[32%] md:w-[40%] w-[70%] ml-10 lg:ml-14 lg:text-[20px] text-[20px] md:text-[15px] mt-5 break-words"
+        <div
+          class="lg:w-[32%] md:w-[55%] leading-lg lg:text-[20px] text-[20px] md:text-[15px] md:mt-3 mt-8 break-words"
         >
-          Earn money wherever and whenever you want — all you need is a device connected to the
-          internet
-        </p>
+          <p>Earn money wherever and whenever you want — <br/> </p>
+          <p>all you need is a device connected to the internet</p>
+        </div>
         <button
-          class="hover:bg-gray-900 duration-300 md:text-[15px] text-[17px] bg-black text-white h-12 md:w-[150px] lg:w-[170px] w-[180px] rounded-sm ml-10 lg:ml-14 mt-5"
+          class="hover:bg-gray-900 duration-300 md:text-xl text-[17px] bg-black text-white h-12 md:w-[150px] lg:w-[170px] w-[180px] rounded-sm md:mt-4 mt-8"
         >
-          Start earning money
+          Start Earning
         </button>
       </div>
     </main>
     <Brands />
-    <CarouselOne />
+    <CardsHIW/>
+    <Othertasks/>
+    <Freelancer/>
+    
+    
+    
   </section>
 </template>
 
