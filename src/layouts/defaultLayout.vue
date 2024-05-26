@@ -3,7 +3,9 @@ const logo = 'Afro Hub'
 </script>
 <template>
   <section>
-    <div class="flex justify-between items-center py-5 px-5 md:px-20 bg-primary text-white sticky top-0 shadow">
+    <div
+      class="flex justify-between items-center py-5 px-5 md:px-20 bg-primary text-white sticky top-0 shadow"
+    >
       <h2 class="text-3xl">{{ logo }}</h2>
       <input type="checkbox" id="nav" class="hidden" />
 
