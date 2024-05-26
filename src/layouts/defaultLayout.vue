@@ -29,10 +29,12 @@ const logo = 'Afro Hub'
       <div
         class="btn text-xl md:ml-10 md:flex nav-items hidden md:justify-between md:items-center gap-5"
       >
-        <button class="hover:bg-black w-20 p-2 rounded-sm duration-700">Login</button>
-        <a>
+        <router-link to="/login">
+          <button class="hover:bg-black w-20 p-2 rounded-sm duration-700">Login</button>
+        </router-link>
+        <router-link to="/signup">
           <button class="hover:bg-black w-24 p-2 rounded-sm duration-700">Sign up</button>
-        </a>
+        </router-link>
       </div>
     </div>
     <router-view />
