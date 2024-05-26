@@ -71,10 +71,10 @@ const auth = reactive({
 
 <style lang="scss" scoped>
 .bimg {
-   background-image: linear-gradient(rgba(#356B4C, 0.9), rgba(black, 0.9)),
-      url(@/assets/pictures/business.jpg);
-   background-position: center;
-   background-size: cover;
-   position: relative;
+  background-image: linear-gradient(rgba(black, 0.8), rgba(#356b4c, 0.95)),
+    url(@/assets/pictures/business.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 </style>

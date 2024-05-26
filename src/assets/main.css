@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --el-color-primary: #356b4c !important;
+  --el-color-primary-light-7: #356b4c !important;
+}

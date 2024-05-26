@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@splidejs/vue-splide": "^0.6.12",
+    "@supabase/supabase-js": "^2.43.4",
     "@types/node": "^20.12.12",
     "@types/vue": "^2.0.0",
     "element-plus": "^2.7.3",
