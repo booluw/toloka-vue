@@ -35,10 +35,13 @@ const landingTxt = "Get Paid To Do Short Tasks Online"
         </ul>
 
         <div class="btn text-xl md:ml-10 md:flex nav-items hidden md:justify-between md:items-center">
+        <router-link to="/login">
           <button class="hover:bg-black w-20 p-2 rounded-sm duration-700">Login</button>
-          <a href>
+        </router-link>
+          <router-link to="/forms">
           <button class="hover:bg-black w-24 p-2 rounded-sm duration-700">Sign up</button>
-          </a>
+        </router-link>
+        
         </div>
       </div>
 
