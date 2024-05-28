@@ -1,7 +1,8 @@
-<script setup>
+<script lang="ts" setup>
 import { ref, reactive } from 'vue'
 
 const confirmPassword = ref('')
+const form = ref(null)
 
 const auth = reactive({
   username: '',
@@ -15,7 +16,7 @@ const auth = reactive({
   <main class="bimg h-screen flex items-center justify-center">
     <section class="bg-white rounded-2xl p-5 md:p-10 md:w-1/3">
       <h3 class="text-2xl text-primary/90 mb-5">Register an account</h3>
-      <el-form label-position="top">
+      <el-form label-position="top" ref="form">
         <el-form-item label="Username">
           <el-input v-model="auth.username" size="large" placeholder="Username" />
         </el-form-item>
@@ -50,7 +51,9 @@ const auth = reactive({
           <el-radio value="FREELANCER" border>Freelancer</el-radio>
         </el-radio-group>
         <div class="my-3">
-          <el-button class="!bg-primary/90 !text-white w-full" size="large">Register</el-button>
+          <el-button class="!bg-primary/90 !text-white w-full capitalize" size="large">
+            Register as a {{ auth.account_type.toLowerCase() }}
+          </el-button>
         </div>
         <div class="flex flex-col">
           <div class="">
