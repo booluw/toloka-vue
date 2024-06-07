@@ -6,6 +6,7 @@ import { useRouter } from 'vue-router';
 
 const form = ref<FormInstance>()
 const router = useRouter()
+const loading = ref(false)
 
 const auth = reactive({
   username: '',
@@ -26,7 +27,7 @@ const validateUsername = (rule: any, value: any, callback: any) => {
 const validateEmail = (rule: any, value: any, callback: any) => {
   if (value === '') {
     callback(new Error('Please add a email'))
-  } else if (!/^\w+@[a-zA-Z_0-9]+?\.[a-zA-Z]{2,6}$/) {
+  } else if (!/^\w+@[a-zA-Z_0-9]+?\.[a-zA-Z]{2,6}$/.test(value)) {
     callback(new Error('Please provide a valid email'))
   } else {
     callback()
@@ -61,9 +62,9 @@ const rules = reactive<FormRules<typeof auth>>({
 })
 
 const addUser = async function (formEl: FormInstance | undefined) {
-  console.log(formEl)
   if (!formEl) return
 
+  loading.value = true
   formEl.validate(async (valid: any) => {
     if (valid) {
       try {
@@ -95,6 +96,8 @@ const addUser = async function (formEl: FormInstance | undefined) {
     } else {
       return false
     }
+
+    loading.value = false
   })
 }
 </script>
@@ -103,7 +106,7 @@ const addUser = async function (formEl: FormInstance | undefined) {
   <main class="bimg h-screen flex items-center justify-center">
     <section class="bg-white rounded-2xl p-5 md:p-10 md:w-1/3">
       <h3 class="text-2xl text-primary/90 mb-5">Register an account</h3>
-      <el-form label-position="top" ref="form" :model="auth" :rules="rules">
+      <el-form @submit.prevent="addUser(form)" label-position="top" ref="form" :model="auth" :rules="rules">
         <el-form-item label="Username" prop="username">
           <el-input v-model="auth.username" size="large" placeholder="Username" />
         </el-form-item>
