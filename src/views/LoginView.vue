@@ -5,8 +5,8 @@
       <h3 class="text-2xl text-primary mb-5">Welcome back!</h3>
 
       <el-form label-position="top">
-        <el-form-item label="Username">
-          <el-input size="large" v-model="input1" placeholder="Username" />
+        <el-form-item label="Email">
+          <el-input size="large" v-model="input1" placeholder="Email" />
         </el-form-item>
 
         <el-form-item label="Password">
