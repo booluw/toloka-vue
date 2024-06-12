@@ -33,13 +33,3 @@ const landingTxt = 'Get Paid To Do Short Tasks Online'
     <Freelancer />
   </section>
 </template>
-
-<style scoped>
-#nav:checked ~ .nav-items {
-  display: flex;
-  /* position:absolute; */
-  /* width: 100%; */
-  /* height: 50vh; */
-  /* padding: 200px; */
-}
-</style>
