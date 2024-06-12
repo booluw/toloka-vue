@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const logo = 'Afro Hub'
+import { logo } from './utils/constants'
 </script>
 <template>
   <section>
